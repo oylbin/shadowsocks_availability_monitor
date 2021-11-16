@@ -2,6 +2,8 @@
 
 check shadowsocks server availability at client side.
 
+Main idea: use ss-tunnel to map local port to www.google.com:80, then send HTTP request to local port, you will get a valid HTTP response if your ss-server is available.
+
 ## Usage
 
 Run the following command in a linux server with docker installed:
